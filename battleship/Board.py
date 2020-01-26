@@ -1,8 +1,10 @@
 import sys
-r  = sys.argv[0] #number of row
-c = sys.argv[1] #number of column
+r  = 10#number of row
+c = 7 #number of column
+#we set the board array
 board = [['*' for row in range (r)] for col in range (c)]
-print('  ' + ' '.join(map(str, (range(r)))))
+print('  ' + ' '.join(str(r) for r in range (r)))
 # print the column labels along with the corresponding label
-for col, sign in enumerate(board): # for each column, we first print the number of the column
-    print(str(col) + ' ' + ' '.join(sign)) #then we print *
+for col, dot in enumerate(board):
+# for each column, we first print the number of the column, then we print "*"
+    print(str(col) + ' ' + ' '.join(dot))
