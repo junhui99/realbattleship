@@ -1,4 +1,6 @@
-row = sys.argv[0]
-col = sys.argv[1]
-board = [['*' for i, row in enumerate(range(2))] for row in enumerate(range(3))]
-for i,j in
+r  = 8 #row
+c = 5 #col
+board = [['*' for column in range(r)] for row in range(c)]
+print(' ' + ' '.join(map(str, range(r)))) # print column labels
+for row, item in enumerate(board): # for each row
+    print(str(r)  + ' '.join(item))
